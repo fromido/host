@@ -1,0 +1,71 @@
+﻿
+
+		/* 
+	Generic Styling, for Desktops/Laptops 
+	*/
+	table{ 
+		width: 100%; 
+		border-collapse: collapse; 
+	}
+	/* Zebra striping */
+	tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+	th { 
+		background: #6b6969; 
+		color: white; 
+		font-weight: bold; 
+	}
+	td, th { 
+		padding: 6px; 
+		border: 1px solid #a6a6a6; 
+		text-align: left; 
+		
+	}
+	
+	/*
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+		/* Force table to not be like tables anymore */
+		.mobileTable ,.mobileTable  thead,.mobileTable  tbody,.mobileTable  th,.mobileTable  td,.mobileTable  tr {
+			display: block;
+		}
+
+		/* Hide table headers (but not display: none;, for accessibility) */
+		.mobileTable thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+		.mobileTable tr { border: 1px solid #6b6969; }
+
+		.mobileTable td {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #a6a6a6;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		.mobileTable td:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+			font-weight:bold;
+		}
+
+	}
+
+	

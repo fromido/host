@@ -1,0 +1,117 @@
+
+Xbody { font: 11px/1.4 Verdana,'Arial',Helvetica,sans-serif; }
+body { font: 11px/1.4 'Arial',Heveltica,sans-serif; }
+a { color: #004464; }
+.glyphicon {font-size:15px;}  /* debe ser multiplo de 3px, sino, NO escala bien */
+
+#header { background-color: #1B3552; color:white; Xheight: 90px;}
+#Xheader.logged { background-color: #DC5915; }   /* orange */
+#Xheader.logged { background-color: #800D0A; }   /* siuv red I */
+#Xheader.logged { background-color: #A31416; }   /* siuv red II */
+#Xheader.logged { background-color: #85140F; }   /* morado */
+#header.logged { background-color: #002C52; }   /* Azul UV */
+#Xheader.logged { background-color: #082B3E; }   /* Azul UV fatwire */
+#header a { color:white;  }
+#header .separ {  border-left: 1px solid white; line-height: 2em; padding:0em;}
+#logoli { margin: 5px 0 5px -1em;}
+#Xlogoli #escudo img,#Xlogoli #nombre img { height:65px; margin-top: 10px;}
+#idiomas { margin-top: 2.5em;}
+
+#bodypanel { 
+  background: url('https://portal.uv.es/skin_grey/images/fondo_wwwuvdegrade.jpg') repeat-x scroll center top #FFF;
+  }
+#content {
+  Xbackground-color: #F2F3F0; 
+  Xbackground-color: #F2F2F2; 
+  background-color: #F5F5F5; 
+  }
+
+#footer { background-color: #3F4545; color:white;  padding-top:6px;}
+#footer.logged { background-color: #667070;}
+#footer a { color:white;  }
+
+/* ... start ... */
+#start #content {
+  padding-top: 2em;
+  }
+#chano {margin-top:3em; } 
+#passwdform { margin-top: 1em; }
+#passwdform legend { border:0px none; margin-bottom: 10px; color:#828B95; font-size:17px;}
+#passwdform .pwformfield {position:relative; z-index:0; 
+   background-color:#DCE1E1; height: 5em; padding-top:0.5em; }
+#passwdform input {background:transparent; font-size:1.3em; font-weight:bold;}
+#passwdform label {width:100%; top:2em; left=0; z-index:-1; color:#666; xfont-size:0.9em; font-weight:normal;}
+#passwdform .form-control {border:0px none; box-shadow:0 0 0 rgba(0, 0, 0, 0.075) inset; }
+#passwdform #botonLdap { background-color:#939899; height:3em; color:white; 
+  font-weight:normal; font-size:1.1em; }
+
+#actu-noticias {
+  margin: 3em 0 1em 0;
+  cursor: pointer;
+  overflow:hidden;
+  Xborder: 1px solid black;
+  }
+#panel-noticias {
+  max-height: 12em;
+  overflow:auto;
+  width:100%;
+  padding-right:2px;
+  }  
+.bloc-noticias .noticia { margin-bottom: 1.5em;  }
+.bloc-noticias .titnot { font-weight: bold; color: #6E7D80; line-height:1em;}
+.bloc-noticias .notitexto { line-height:1.1em; color: #6E7D80; }
+.Xbloc-noticias .notitexto { display:none; }
+#Xnotieye { margin:0 0.2em 7em 0; border-bottom: 1px solid #ddd; } 
+#notimas { margin:1em 0.2em 9em 0; } 
+
+#popup-noticias {
+  background-color: white;
+  font-size: 1.2em;
+  padding: 0.3em;
+
+  position: absolute;
+  top: 1%;
+  left: 0%;
+  width: 100%;
+  padding: 2em;
+  
+  display:none;
+  cursor: pointer;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  }
+
+@media (min-width: 750px) { 
+    #popup-noticias {
+      width: 320%;
+      padding: 3em;  
+      left: -110%;
+      }
+    }
+  
+
+/* ... portal ... */
+#logout { background-color:#AFB7B8; padding: 0.5em 1em; }
+#loginusername { padding: 0.5em 1em; }
+
+/* ... test ... */
+#testoverlay {
+  pointer-events:none; /* solo va en FF */
+  position:fixed;  
+  z-index:100;
+  top:30%; left:30%; 
+  height:200px;  width:300px;
+  background: transparent
+              url('https://portal.uv.es/skin_uv/images/testwatermark.png') 
+              50% 50% no-repeat;
+  opacity: 0.3;
+  }
+
+#main_01 {
+  margin-bottom: 5em;
+}
+
+.tabdiv{
+	padding:10px;
+	background-color:#ffffff;
+}
